@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Achievement"
+    android:background="@color/bgLight"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/point_icon_achievement"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/point"/>
+
+        <TextView
+            android:id="@+id/point_achievement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_100_points"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="12sp"
+            android:textColor="@color/text"/>
+
+        <ImageView
+            android:id="@+id/profile_icon_achievement"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/profile"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:id="@+id/blog_icon_achievement"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/news"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/achievement_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/achievement"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/let_s_see_what_you_achieved"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement1"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement1"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_ongoing"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/getting_started"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/walk_with_total_steps_of_5_000"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_getting_started"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_getting_started"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_getting_started"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_getting_started"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_10"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement2"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement2"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_ongoing"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/heating_up_some_meals"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/burn_50_calories"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_heating"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_heating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_heating"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_heating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_7"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement3"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement3"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_ongoing"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/harvest_season"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/spent_75_points_within_a_month"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_Harvest_season"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_harvest_season"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_harvest_season"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_harvest_season"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_5"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement4"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement4"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_onstarting"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/leap_forward"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/walk_with_total_steps_of_40_000"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_leap_forward"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_leap_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_leap_forward"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_leap_forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement5"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement5"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_onstarting"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/medium_rare"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/burn_350_calories"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_medium_rare"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_medium_rare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_medium_rare"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_medium_rare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_17"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement6"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement6"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_onstarting"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/mildly_rich"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/spent_500_points_within_2_months"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_mildly_rich"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_mildly_rich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_mildly_rich"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_mildly_rich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_15"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement7"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement7"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_gold"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/walls_of_chinaaaaaaa"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/walk_with_total_steps_of_100_000"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_walls"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_walls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_walls"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_walls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_30"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement8"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement8"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_gold"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/meat_s_ready"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/burn_750_calories"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_meat"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_meat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_meat"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_meat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_27"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="20dp"
+                android:layout_marginBottom="100dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_achievement9"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="15dp"
+                    app:cardElevation="0dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/img_achievement9"
+                            android:layout_width="40.20dp"
+                            android:layout_height="39.36dp"
+                            android:src="@drawable/achievement_gold"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@string/todo" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/achievement9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/potential_millionaire"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <TextView
+                    android:id="@+id/challenge9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="95dp"
+                    android:layout_marginTop="50dp"
+                    android:text="@string/spent_1_200_points"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="14sp"
+                    android:textColor="@color/text"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_millionaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="95dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="30dp"
+                    android:progressDrawable="@drawable/progress_horizontal" />
+
+                <TextView
+                    android:id="@+id/value_millionaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="72dp"/>
+
+                <ImageView
+                    android:id="@+id/point_icon_achievement_millionaire"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/point"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:id="@+id/point_achievement_millionaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_30"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/button_card_view"
+                android:layout_width="232dp"
+                android:layout_height="57dp"
+                app:cardCornerRadius="30dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/inputFieldBg"
+                app:cardElevation="30dp"
+                android:layout_marginBottom="30dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/home_interaction_achievement"
+                        android:layout_width="20.40dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/home_onlet"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="15dp"
+                        android:contentDescription="@string/todo" />
+
+                    <ImageView
+                        android:id="@+id/achievement_interaction_achievement"
+                        android:layout_width="23.50dp"
+                        android:layout_height="23dp"
+                        android:src="@drawable/achievement_onchanged"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/todo"
+                        android:transitionName="onchanged"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="-10.5dp">
+
+            <Button
+                android:id="@+id/button_start_achievement"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/todo"
+                android:background="@drawable/start"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

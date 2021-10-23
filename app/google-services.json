@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "213375356636",
+    "project_id": "runscore-6c14b",
+    "storage_bucket": "runscore-6c14b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213375356636:android:945a4613f498f6f746ee19",
+        "android_client_info": {
+          "package_name": "com.amstr.runscore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213375356636-08grb20fc9tdl6rvaafqt01h6rbsgt35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeWRdIwD4TRIixylaWqWYcpUw4gemPod4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213375356636-08grb20fc9tdl6rvaafqt01h6rbsgt35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

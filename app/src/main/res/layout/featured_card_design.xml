@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="119dp"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/bgLight">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/featured_icon"
+            android:layout_width="57dp"
+            android:layout_height="43dp"
+            android:src="@drawable/steps"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/featured_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_000"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp">
+
+        <TextView
+            android:id="@+id/featured_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_steps"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="16sp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

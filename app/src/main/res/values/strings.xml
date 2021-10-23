@@ -1,0 +1,202 @@
+<resources>
+    <string name="app_name">Runscore</string>
+    <string name="todo">TODO</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="your_name">Your Name</string>
+    <string name="next">Next</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="back">Back</string>
+    <string name="title_activity_home">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Name</string>
+    <string name="_100_points">100 Points</string>
+    <string name="welcome_back_name">Welcome back, Name</string>
+    <string name="how_s_your_day_ready_to_walk">How’s your day? Ready to walk?</string>
+    <string name="rewards_fever">Rewards Fever</string>
+    <string name="we_ve_added_more_rewards_check_them_out">We’ve added more rewards. Check them out!</string>
+    <string name="rewards">Rewards</string>
+    <string name="don_t_just_walk_spend_them">Don’t just walk. Spend them!</string>
+    <string name="food">Food</string>
+    <string name="fashion">Fashion</string>
+    <string name="sport">Sport</string>
+    <string name="more">More</string>
+    <string name="your_stats">Your Stats</string>
+    <string name="check_your_progress_so_far">Check your progress so far.</string>
+    <string name="_000">000</string>
+    <string name="total_steps">Total steps</string>
+    <string name="_0_25">0/25</string>
+    <string name="achievements">Achievements</string>
+    <string name="_0k">0K</string>
+    <string name="calories">Calories</string>
+    <string name="_100">100</string>
+    <string name="your_points">Your points</string>
+    <string name="today_s_goal">Today\'s goal</string>
+    <string name="walk_with_minimum_8_000_steps">Walk with minimum 8,000 steps</string>
+    <string name="_0">0%</string>
+    <string name="start">Start</string>
+    <string name="steps">steps</string>
+    <string name="tap_the_counter_to_stop">Tap the counter to stop</string>
+    <string name="achievement">Achievement</string>
+    <string name="let_s_see_what_you_achieved">Let’s see what you achieved</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="walk_with_total_steps_of_5_000">Walk with total steps of 5,000</string>
+    <string name="_5">5</string>
+    <string name="harvest_season">Harvest Season</string>
+    <string name="spent_75_points_within_a_month">Spent 45 points within a month</string>
+    <string name="_10">10</string>
+    <string name="leap_forward">Leap Forward</string>
+    <string name="walk_with_total_steps_of_40_000">Walk with total steps of 40,000</string>
+    <string name="mildly_rich">Mildly Rich</string>
+    <string name="spent_500_points_within_2_months">Spent 500 points within 2 months</string>
+    <string name="heating_up_some_meals">Heating Up Some Meals</string>
+    <string name="burn_50_calories">Burn 50 calories</string>
+    <string name="_7">7</string>
+    <string name="medium_rare">Medium Rare</string>
+    <string name="burn_350_calories">Burn 350 calories</string>
+    <string name="_17">17</string>
+    <string name="_20">20</string>
+    <string name="_15">15</string>
+    <string name="walls_of_chinaaaaaaa">Walls of Chinaaaaaaa</string>
+    <string name="walk_with_total_steps_of_100_000">Walk with total steps of 100,000</string>
+    <string name="_30">30</string>
+    <string name="meat_s_ready">Meat’s Ready</string>
+    <string name="burn_750_calories">Burn 750 calories</string>
+    <string name="_27">27</string>
+    <string name="potential_millionaire">Potential Millionaire</string>
+    <string name="spent_1_200_points">Spent 1,200 points</string>
+    <string name="news">News</string>
+    <string name="get_updates_about_healts">Get updates about healts</string>
+    <string name="author">Author</string>
+    <string name="date_publish">Date Publish</string>
+    <string name="title">Title</string>
+    <string name="content">content</string>
+    <string name="sample">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="publish_on_date">Publish on date</string>
+    <string name="identity">Identity</string>
+    <string name="name_and_username">Name and Username</string>
+    <string name="security">Security</string>
+    <string name="username_password_authentication">Username, password, authentication</string>
+    <string name="about">About</string>
+    <string name="everything_to_know_about_this_app">Everything to know about this app</string>
+    <string name="save">Save</string>
+    <string name="your_hard_work_won_t_be_useless">Your hard work won’t be useless</string>
+    <string name="all">All</string>
+    <string name="hyundai_santa_fe">Hyundai Santa FE</string>
+    <string name="expires">Expires:</string>
+    <string name="_31_december_2021">31 December 2021</string>
+    <string name="every_hyundai_distro">Every Hyundai Distro</string>
+    <string name="_5000">5.000</string>
+    <string name="read_more">Read More</string>
+    <string name="kfc_1_snack_bucket">KFC 1 Snack Bucket</string>
+    <string name="_25_may_2021">25 May 2021</string>
+    <string name="bandung_jakarta">Bandung*, Jakarta*</string>
+    <string name="_75">75</string>
+    <string name="bukalapak_10_diskon_voucher">Bukalapak 10% Diskon Voucher</string>
+    <string name="_10_may_2021">10 May 2021</string>
+    <string name="official_stores_only">Official stores only</string>
+    <string name="_25">25</string>
+    <string name="your_redeem_code">Your redeem code</string>
+    <string name="ax153ff4597r">AX153FF4597R</string>
+    <string name="copy">Copy</string>
+    <string name="descriptopn">Descriptopn</string>
+    <string name="description">Description</string>
+    <string name="terms_condition"><![CDATA[Terms & Condition]]></string>
+    <string name="contact_info">Contact Info</string>
+    <string name="no_telephone">No Telephone</string>
+    <string name="mail">Mail</string>
+    <string name="redeem_for_0_points">Redeem for 0 points</string>
+</resources>

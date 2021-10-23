@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgLight"
+    android:orientation="vertical"
+    tools:context=".CounterAfterStart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/after_start_back_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/back"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/after_start_daily_goal_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    app:cardElevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/today_s_goal"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="14sp"
+                            android:textColor="@color/text"/>
+
+                        <ImageView
+                            android:layout_width="20.24dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/set"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:id="@+id/challenge_in_after"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/walk_with_minimum_8_000_steps"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="12sp"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="25dp"/>
+
+                        <ProgressBar
+                            android:id="@+id/after_start_progress_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="30dp"
+                            android:progressDrawable="@drawable/progress_horizontal" />
+
+                        <TextView
+                            android:id="@+id/after_start_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="12sp"
+                            android:textColor="@color/text"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="42dp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_circle"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:progress="0"
+                    android:layout_centerInParent="true"
+                    android:indeterminateOnly="false"
+                    android:progressDrawable="@drawable/progress_circle"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/detector"
+                            android:layout_marginTop="-30dp"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_000"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:textSize="24sp"
+                            android:textColor="@color/text"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/steps"
+                            android:layout_marginTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/steps"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="24sp"
+                            android:textColor="@color/text"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/command"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tap_the_counter_to_stop"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="12sp"
+                    android:textColor="@color/text"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/featured_recycler_after_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/bgLight">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

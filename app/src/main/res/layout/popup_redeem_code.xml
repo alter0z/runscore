@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="354dp"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/bgLight">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_redeem_code"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="18sp"
+                android:textColor="@color/text"/>
+
+            <TextView
+                android:id="@+id/random_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="25sp"
+                android:textColor="@color/text"
+                android:text="@string/ax153ff4597r"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:layout_marginTop="100dp"
+                    android:id="@+id/button_copy"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/copy"
+                    android:padding="10dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="@color/bgLight"
+                    android:textSize="16sp"
+                    android:textAllCaps="false" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgLight"
+    android:orientation="vertical"
+    tools:context=".CounterBeforeStart">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/back"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/daily_goal_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    app:cardElevation="15dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/today_s_goal"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:textSize="14sp"
+                            android:textColor="@color/text"/>
+
+                        <ImageView
+                            android:layout_width="20.24dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/set"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:id="@+id/challenge_in_before"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/walk_with_minimum_8_000_steps"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="12sp"
+                            android:textColor="@color/text"
+                            android:layout_marginTop="25dp"/>
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="30dp"
+                            android:progressDrawable="@drawable/progress_horizontal" />
+
+                        <TextView
+                            android:id="@+id/value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="12sp"
+                            android:textColor="@color/text"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="42dp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:id="@+id/button_below"
+                    android:layout_width="198dp"
+                    android:layout_height="198dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/button_start_below"
+                    android:contentDescription="@string/todo" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-180dp"
+                android:layout_marginStart="10dp">
+
+                <Button
+                    android:id="@+id/button_above"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_start_above" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-125dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/button_above_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:textSize="36sp"
+                    android:textColor="@color/text_white"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/featured_recycler_before_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="180dp"
+                android:background="@color/bgLight">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

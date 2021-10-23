@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>-->
+    <color name="bgLight">#FCFCFC</color>
+    <color name="bgDark">#2C2F3F</color>
+    <color name="text">#757575</color>
+    <color name="startGradient">#2D5364</color>
+    <color name="centerGradient">#203A43</color>
+    <color name="endGradient">#102027</color>
+    <color name="inputFieldBg">#FEFEFE</color>
+    <color name="text_white">#FDFDFD</color>
+    <color name="progress_empty">#E9E9E9</color>
+    <color name="achievement_complete">#3BC224</color>
+</resources>

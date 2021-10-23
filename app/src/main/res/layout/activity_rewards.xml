@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgLight"
+    android:orientation="vertical"
+    tools:context=".Rewards">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/back_icon_rewards"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:id="@+id/setting_icon"
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/setting"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rewards"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:textSize="16sp"
+            android:textColor="@color/text"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_hard_work_won_t_be_useless"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="12sp"
+            android:textColor="@color/text"/>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/show_point_reward"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_100"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="12sp"
+                android:layout_marginStart="40dp"
+                android:textColor="@color/text"/>
+
+            <ImageView
+                android:id="@+id/point_icon_reward"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/point" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/progress_empty"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/all"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/inputFieldBg"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="15dp"
+                >
+
+                <RelativeLayout
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/inputFieldBg"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="15dp"
+                >
+
+                <RelativeLayout
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fashion"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/inputFieldBg"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginStart="15dp"
+                >
+
+                <RelativeLayout
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textSize="12sp"
+                        android:textColor="@color/text"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/hyundai_card"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="183dp"
+                    app:cardBackgroundColor="@color/bgLight"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_brand_hyundai"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:src="@drawable/hyundai"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/icon_brand_hyundai"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/hyundai_santa_fe"
+                            android:textColor="@color/text"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/expires1"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/expires"
+                            android:textColor="@color/text"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/date_x1"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/_31_december_2021"
+                            android:textColor="@color/text"
+                            android:textSize="12sp" />
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/every_hyundai_distro"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/text"/>
+
+                            <ImageView
+                                android:layout_width="13dp"
+                                android:layout_height="17dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/location_icon" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="130dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <Button
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:id="@+id/redeem"
+                                android:layout_width="69dp"
+                                android:layout_height="25dp"
+                                android:text="@string/_5000"
+                                android:background="@drawable/button_bg"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/text_white"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="130dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <Button
+                                android:id="@+id/read_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:textAllCaps="false"
+                                android:text="@string/read_more"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="12sp"
+                                android:background="@drawable/register_bg"
+                                android:layout_marginEnd="80dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/kfc_card"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="183dp"
+                    app:cardBackgroundColor="@color/bgLight"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_brand_kfc"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:src="@drawable/kfc"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/icon_brand_kfc"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/kfc_1_snack_bucket"
+                            android:textColor="@color/text"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/expires2"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/expires"
+                            android:textColor="@color/text"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/date_x2"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/_25_may_2021"
+                            android:textColor="@color/text"
+                            android:textSize="12sp" />
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/bandung_jakarta"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/text"/>
+
+                            <ImageView
+                                android:layout_width="13dp"
+                                android:layout_height="17dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/location_icon" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="130dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <Button
+                                android:id="@+id/redeem2"
+                                android:layout_width="40dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="@string/_75"
+                                android:background="@drawable/button_bg"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/text_white"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="130dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <Button
+                                android:id="@+id/read_more2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:textAllCaps="false"
+                                android:text="@string/read_more"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="12sp"
+                                android:background="@drawable/register_bg"
+                                android:layout_marginEnd="50dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/bukalapak_card"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="183dp"
+                    app:cardBackgroundColor="@color/bgLight"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:id="@+id/icon_brand_bukalapak"
+                            android:layout_width="62dp"
+                            android:layout_height="62dp"
+                            android:src="@drawable/bukalapak"
+                            android:contentDescription="@string/todo" />
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/icon_brand_bukalapak"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/bukalapak_10_diskon_voucher"
+                            android:textColor="@color/text"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/expires3"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="70dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/expires"
+                            android:textColor="@color/text"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/date_x3"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:text="@string/_10_may_2021"
+                            android:textColor="@color/text"
+                            android:textSize="12sp" />
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/official_stores_only"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/text"/>
+
+                            <ImageView
+                                android:layout_width="13dp"
+                                android:layout_height="17dp"
+                                android:contentDescription="@string/todo"
+                                android:src="@drawable/location_icon" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="130dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <Button
+                                android:id="@+id/redeem3"
+                                android:layout_width="40dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:text="@string/_25"
+                                android:background="@drawable/button_bg"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:textSize="12sp"
+                                android:layout_marginStart="20dp"
+                                android:textColor="@color/text_white"/>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginTop="130dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <Button
+                                android:id="@+id/read_more3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="4dp"
+                                android:layout_marginBottom="4dp"
+                                android:textAllCaps="false"
+                                android:text="@string/read_more"
+                                android:fontFamily="@font/montserrat_regular"
+                                android:textSize="12sp"
+                                android:background="@drawable/register_bg"
+                                android:layout_marginEnd="50dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
