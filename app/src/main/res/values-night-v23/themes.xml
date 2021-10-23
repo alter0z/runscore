@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/bgLight</item>
         <item name="colorPrimaryVariant">@color/bgLight</item>
         <item name="colorOnPrimary">@color/bgLight</item>
+        <item name="colorControlNormal">@color/cardLight</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/bgDark</item>
         <item name="colorSecondaryVariant">@color/bgDark</item>

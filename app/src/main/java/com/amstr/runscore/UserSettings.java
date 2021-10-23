@@ -64,7 +64,7 @@ public class UserSettings extends AppCompatActivity {
     TextView name,point;
     Uri imageUri;
     Intent intents;
-    Bitmap bitmap;
+//    Bitmap bitmap;
     String UserID = "";
     String myUri = "";
     StorageTask uploadTask;
@@ -100,30 +100,30 @@ public class UserSettings extends AppCompatActivity {
 
         UserID = user_username;
 
-        // change picture
-        profileImage.setOnClickListener(view -> {
-//            Dexter.withActivity((Activity) getApplicationContext()).withPermission(Manifest.permission.READ_EXTERNAL_STORAGE).withListener(new PermissionListener() {
-//                @Override
-//                public void onPermissionGranted(PermissionGrantedResponse response) {
-//                    Intent intent = new Intent();
-//                    intent.setType("image/*");
-//                    intent.setAction(Intent.ACTION_GET_CONTENT);
-//                    startActivityForResult(Intent.createChooser(intent,"please select image"),101);
-//                }
+//        // change picture
+//        profileImage.setOnClickListener(view -> {
+////            Dexter.withActivity((Activity) getApplicationContext()).withPermission(Manifest.permission.READ_EXTERNAL_STORAGE).withListener(new PermissionListener() {
+////                @Override
+////                public void onPermissionGranted(PermissionGrantedResponse response) {
+////                    Intent intent = new Intent();
+////                    intent.setType("image/*");
+////                    intent.setAction(Intent.ACTION_GET_CONTENT);
+////                    startActivityForResult(Intent.createChooser(intent,"please select image"),101);
+////                }
+////
+////                @Override
+////                public void onPermissionDenied(PermissionDeniedResponse response) {
+////
+////                }
+////
+////                @Override
+////                public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
+////                    token.continuePermissionRequest();
+////                }
+////            }).check(); //hasCropped = true;
 //
-//                @Override
-//                public void onPermissionDenied(PermissionDeniedResponse response) {
-//
-//                }
-//
-//                @Override
-//                public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-//                    token.continuePermissionRequest();
-//                }
-//            }).check(); //hasCropped = true;
-
-            CropImage.activity().setAspectRatio(1, 1).start(UserSettings.this);
-        });
+//            CropImage.activity().setAspectRatio(1, 1).start(UserSettings.this);
+//        });
 
 //        if(!hasCropped){
 //            Toast.makeText(getApplicationContext(),"Failed to upload",Toast.LENGTH_SHORT).show();
@@ -131,6 +131,7 @@ public class UserSettings extends AppCompatActivity {
 //            uploadImage();
 //        }
 
+        // sign out
         logout.setOnClickListener(view -> {
             //intents = new Intent(getApplicationContext(),Identity.class);
         });

@@ -13,42 +13,40 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 5000;
+    private static int SPLASH_SCREEN = 1000;
 
     // variables
-    Animation topAnim, bottomAnim;
     ImageView logo, logoName;
+    FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-        // animations
-        topAnim = AnimationUtils.loadAnimation(this,R.anim.top_anim);
-        bottomAnim = AnimationUtils.loadAnimation(this,R.anim.bottom_anim);
+        auth = FirebaseAuth.getInstance();
 
         // get id
         logo = findViewById(R.id.logo);
         logoName = findViewById(R.id.logo_name);
 
-        logo.setAnimation(topAnim);
-        logoName.setAnimation(bottomAnim);
-        
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this,Login.class);
-
-                Pair[] pairs = new Pair[1];
-                pairs[0] = new Pair<View,String>(logo,"logo_transit");
-
-                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
-                startActivity(intent,options.toBundle());
+        new Handler().postDelayed((Runnable) () -> {
+            // check auth then to dashboard
+            if(auth.getCurrentUser() != null){
+                toMainApp();
+            } else {
+                startActivity(new Intent(MainActivity.this,Login.class));
+                finish();
             }
         },SPLASH_SCREEN);
+    }
+
+    private void toMainApp() {
+        startActivity(new Intent(MainActivity.this,Home.class));
+        finish();
     }
 }
